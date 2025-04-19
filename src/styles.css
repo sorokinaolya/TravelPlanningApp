@@ -1,0 +1,211 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #515ed38a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #515ed37e;
+}
+
+input, select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.route-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+button.start-planning-btn {
+  width: 523px;
+  height: 60px;
+  background-color: #515ed37e;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Inria Sans', sans-serif;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button.start-planning-btn:hover {
+  background-color: #3d0088;
+}
+
+/* Контейнер для всех полей ввода */
+.input-group-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Добавляем отступы между полями */
+  width: 100%;
+  max-width: 800px; /* Ограничиваем ширину контейнера */
+  margin-bottom: 20px;
+}
+
+/* Поля ввода для города и дат */
+.input-group {
+  position: relative;
+  width: 48%; /* Уменьшаем ширину, чтобы уместились на одной линии */
+}
+
+input[type="text"], input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Стили для активных полей ввода */
+input[type="text"]:focus, input[type="date"]:focus {
+  border-color: #515ed37e;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.avia-btn {
+  margin-right: 25px;
+}
+
+/* Стилизация для активных полей, когда начался ввод */
+input[type="text"]:focus + label,
+input[type="date"]:focus + label,
+input[type="text"]:not(:placeholder-shown) + label,
+input[type="date"]:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #b2b2b2;
+}
+
+.ticket-card-outer {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F0F0;
+  padding: 10px;
+  border-radius: 14px;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  margin-bottom: 10px;
+}
+
+.upper-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aviacompany {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-aviacompany {
+  width: 30px;
+  height: 30px;
+}
+
+.title-aviacompany {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.ticket-price-outer {
+
+}
+.ticket-price {
+}
+
+.lower-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.departure-outer {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-place-outer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+.time-place-outer > p {
+  margin: 0;
+}
+
+.date-title {
+    margin: 0;
+}
+
+

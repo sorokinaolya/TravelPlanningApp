@@ -1,0 +1,64 @@
+/* Стили для карточки достопримечательности */
+.attraction-card {
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .attraction-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .attraction-info {
+    padding: 15px;
+    width: calc(100% - 200px); /* Остальная часть карточки */
+  }
+  
+  .attraction-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .attraction-address,
+  .attraction-description,
+  .attraction-history {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .attraction-details {
+    margin-top: 15px;
+  }
+  
+  .attraction-btn {
+    background-color: #515ed37e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .attraction-btn:hover {
+    background-color: #515ed37e;
+  }
+  
+  .attraction-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .attraction-card + .attraction-card {
+    margin-left: 20px;
+  }
+  
